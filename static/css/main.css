@@ -3,11 +3,11 @@
 }
 
 body {
-	background-color: black;
+	background-color: lightgray;
 }
 
 #total-orders {
-	background-color: white;
+	background-color: #0BE3DE;;
 }
 
 #orders-delivered {

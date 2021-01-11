@@ -1,0 +1,27 @@
+{% extends 'accounts/index.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="row">
+	<!-- Empty div for centering the midlle div-->
+	<div class="col-2"> </div>
+
+	<div class="col-8 card card-body text-center">
+
+		<p>Are you sure you want to delete "{{item}}"?</p>
+
+		<form action="" method="POST">
+			{% csrf_token %}
+			
+			<a class="btn btn-warning btn-sm" href="{% url 'home' %}">Cancel</a>
+			<input class="btn btn-danger btn-sm" type="Submit" value="Confirm">
+		</form>
+	</div>
+
+	<!-- Empty div for centering the midlle div-->
+	<div class="col-2"> </div> 
+</div>
+
+{% endblock %}

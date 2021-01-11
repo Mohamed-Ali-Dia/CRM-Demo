@@ -1,47 +1,44 @@
 
 <br>
-	<main role="main" class="container-fluid">
-		<div class="row">
-			<div class="col">
-				<div class="col-md">
-					<div class="card text-center text-white" id="total-orders">	
-						<div class="card-header">
-							<h5 class="card-title">Total Orders</h5>
-						</div>
-						<div class="card-body">
-							<h3 class="card-title">{{total_orders}}</h3>
-						</div>
-					</div>
-				</div>
-			</div>
 
-			<div class="col">
-				<div class="col-md">
-					<div class="card text-center text-white" id="orders-delivered">	
-						<div class="card-header">
-							<h5 class="card-title">Orders Delivered</h5>
-						</div>
-						<div class="card-body">
-							<h3 class="card-title">{{delivered}}</h3>
-						</div>
-					</div>
+<div class="container-fluid">
+	<div class="row">
+		
+	<!-- Total Orders Status -->
+		<div class="col-md col-sm">
+			<div class="card text-center text-white" id="total-orders">	
+				<div class="card-header">
+					<h5>&nbspTotal&nbspOrders</h5>
 				</div>
-			</div>
-
-			<div class="col">
-				<div class="col-md">
-					<div class="card text-center text-white" id="orders-pending">	
-						<div class="card-header">
-							<h5 class="card-title">Orders Pending</h5>
-						</div>
-						<div class="card-body">
-							<h3 class="card-title">{{pending}}</h3>
-						</div>
-					</div>
+				<div class="card-body" id="total-orders-body">
+					<h3>{{total_orders}}</h3>
 				</div>
 			</div>
 		</div>
-	</main>
 
-	<br>
+	<!-- Orders Delivered Status -->
+		<div class="col-md col-sm">
+			<div class="card text-center text-white" id="orders-delivered">	
+				<div class="card-header">
+					<h5>&nbspOrders&nbspDelivered</h5>
+				</div>
+				<div class="card-body">
+					<h3>{{delivered}}</h3>
+				</div>
+			</div>
+		</div>
+
+	<!-- Orders Pending Status -->
+		<div class="col-md col-sm">
+			<div class="card text-center text-white" id="orders-pending">	
+				<div class="card-header">
+					<h5>&nbspOrders&nbspPending</h5>
+				</div>
+				<div class="card-body">
+					<h3>{{pending}}</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
